@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 500px;
+            background-color: #00778B;
+            position: absolute;
+        }
+
+        .stripe{
+            width: 100%;
+            height: 100px;
+            background-color: #FFC72C;
+            position: relative;
+            top: 33.33%
+
+        }
+
+        .triangle{
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            width: 40%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0; 
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="stripe"></div>
+        <div class="triangle"></div>
+    </div>
+</body>
+</html>

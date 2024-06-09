@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 500px;
+            background-color: #000000;
+            position: absolute;
+        }
+
+        .stripe{
+            width: 100%;
+            height: 100px;
+            background-color: #FFFFFF;
+            position: relative;
+            top: 33.33%
+
+        }
+
+        .laststripe{
+            width: 100%;
+            height: 100px;
+            background-color: #149954;
+            position: relative;
+            top: 33.33%;
+        }
+
+        .triangle{
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            width: 34%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0; 
+            background-color: #E4312B;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="stripe"></div>
+        <div class="laststripe"></div>
+        <div class="triangle"></div>
+        
+    </div>
+    <!-- I realised how you place the divs matters as they can affect the final outlay of the flag
+    Therefore, the formatting of the divs should be as follows:
+    <div class="stripe"></div>
+    <div class="laststripe"></div>
+    <div class="triangle"></div> -->
+</body>
+</html>
